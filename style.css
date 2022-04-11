@@ -1,0 +1,340 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.header{
+     padding: 10px 0px;
+     position: relative;
+}
+
+.logo{
+     display: inline-block;
+     text-align: right;
+     color: #055999;
+     position: absolute;
+     left: 0;
+     top: 0;
+     padding: 0 5px;
+     user-select: none;
+     line-height: normal !important;
+     margin-left: 15px;
+}
+.logo::after{
+     content: '';
+     border-left: 2px solid #055999;
+     top: 0;
+     position: absolute;
+     right: 0;
+     height: 100%;
+}
+.logo h3{
+     text-transform: uppercase;
+     font-weight: bold;
+     
+}
+.logo p{
+     font-size: 16px;
+     font-weight: bold;
+}
+.navigation{
+     display: none;
+     background: white;
+     transition: 0.3s height ease-in-out;
+}
+.navigation ul{
+     list-style: none;
+     color: #2c73bf;
+     margin-top: 10px;
+}
+.navigation li{
+    
+     margin: 4px 0px;
+     user-select: none;
+     display: flex;
+     line-height: normal !important;
+     align-items: center;   
+}
+.navigation li:hover{
+     background-color: #055999;
+     color: white;
+     transition: .4s;
+}
+.active{
+     background-color: #055999;
+     color: white;
+     font-weight: bold;
+}
+.icon-menu{
+     height: 45px;
+     width: 100%;
+    
+     text-align: right;
+     position: relative;
+     line-height: 45px;
+     user-select: none;
+    
+}
+.icon-menu i{
+     margin-right: 15px;
+}
+.submenu{
+     display: none;
+     font-size: 13px;
+     color: #aaa !important;
+     margin-top: 0 !important;
+     width: 100% !important;
+}
+.item-menu{
+     margin: 0;
+     padding: 8px 20px !important;
+}
+input:checked ~ .navigation{
+     display: block;
+}
+.aboutus{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     text-align: left;
+}
+.aboutus:hover .submenu{
+     display: block;
+}
+.aboutus div{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     width: 100%;
+}
+.banner img{
+
+     /*background-image: url(./image/.png);
+     background-repeat: no-repeat;
+     background-size: cover;*/
+    
+     width: 100vw;
+     height:300px ;
+}
+.text{
+     text-align: center;
+     padding-top: 20px;
+}
+.text p{
+     width: 90%;
+     margin: auto;
+}
+.decription{
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.left{
+    width: 90vw;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    background:rgb(255, 204, 213);
+    text-align: center;
+    margin-top:30px ;
+
+
+}
+.left:hover{
+     background: white;
+     border:1px solid blue;
+}
+.left a{
+     text-decoration: none;
+     border: 1px solid blue;
+     width: 30%;
+     background: blue;
+     color:white;  
+}
+.bottom_content{
+        width: 100vw;
+        height: auto;
+        margin: 20px 0;
+        /*display: flex;
+        flex-direction: column;
+        align-items: center;*/
+       background-color:  rgb(255, 204, 213);
+       /*margin: 20px 0px;
+       padding: 20px 0px;*/
+
+
+    }
+    .content{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px 10px;
+    }
+.bottom_content img{
+     width: 70%;
+     height: auto;
+
+}
+.content_text{
+     width: 90%;
+     margin:10px auto;
+}
+.footer_content{
+     background: black;
+     color: rgb(149, 142, 142);
+
+
+}
+.footer_left{
+     padding-left: 15px;
+     padding-bottom: 10px
+   
+}
+.footer_bottom{
+     background-color: black;
+     color: rgb(148, 143, 143);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 20px;
+     padding-bottom: 15px;
+}
+.icon{
+     margin: 5px 15px;
+}
+
+
+
+
+@media (min-width: 576px){
+}
+@media (min-width: 768px){
+     .icon-menu label{
+          display: none;
+     
+     }
+     .logo{
+          position: relative;
+     }
+     .navigation{
+          display: block;
+          position: relative;
+     }
+     
+     .icon-menu{
+          display: flex;
+          justify-content: space-between;
+          
+     }
+     .navigation > ul{
+          display: flex;
+     }
+     .navigation li{
+          margin: 0 4px;
+          padding: 5px 10px !important;
+     }
+     .aboutus{
+          position: relative;
+     }
+     .aboutus i{
+          margin-right: 0;
+     }
+     .submenu{
+          background: white;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          display: none;
+          padding: 2px 0px !important;
+          box-shadow: 0 0 2px black;
+     }
+     .item-menu{
+          margin: 0!important;
+          padding: 15px 10px;
+          
+     
+     }
+     .submenu {
+          width: 100% !important;
+     }
+     
+     .item-menu:hover{
+          margin: 0!important; 
+     }
+     .aboutus:hover .submenu{
+          display: block;
+     }
+     .decription{
+          width: 80vw;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+     }
+     .left{
+          width: 30%;
+     }
+     .left a{
+         margin-top: 10px;
+         margin-bottom: 5px;
+          width: 40%
+     }
+     .bottom_content .content{
+          width: 80%;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+     }
+     .bottom_content img{
+          width: 30%;
+          height: auto;
+          margin-left: 20px;
+          margin-right: 20px
+     }
+     .content_text{
+          margin-right: 15px;
+     }
+     .footer_content{
+          display: flex;
+
+     }
+     .footer_bottom{
+          line-height: 20px;
+          background-color: black;
+          color: white;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding:0px 20px;
+
+     }
+     .footer_left{
+          padding-top: 10px;
+     }
+     .icon{
+          padding-bottom: 10px
+     }
+     .icon i{
+          margin-right: 10px;
+     }
+    
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
+
+}
